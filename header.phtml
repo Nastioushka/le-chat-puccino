@@ -23,17 +23,22 @@
   <body>
     <div id="wrap">
       <header>
-        <div class="conteiner">
+        <div class="conteiner flex">
           <img src="img/logo-chapuccino.png" alt="Logo - Le Chat Puccino">
           <h1>Le Chat Puccino - Bar à Chat, Neko café</h1>
         </div>
       </header>
-      <nav class="conteiner">
-        <ul id="nav">
+      <ul id="nav" class="flex space-between grow-1 direction-row">
+      <?php print_nav($headings); ?>
+      </ul>
+
+
+      <!-- <nav class="conteiner">
+        <ul id="nav" class="flex space-between grow-1 direction-row">
           <li><a href="#">Présentation</a></li>
           <li><a href="#">La carte</a></li>
           <li><a href="#">Nos protégés</a></li>
           <li><a href="#">Nous contacter</a></li>
         </ul>
-      </nav>
+      </nav> -->
       <main>
