@@ -36,7 +36,8 @@ if ($_GET!=null) {
       include "presentation.phtml";
     break;
   };
-    $page = "presentation.phtml";
+} else {
+    include "presentation.phtml";
 }
 
 include "footer.phtml";
