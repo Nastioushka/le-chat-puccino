@@ -3,10 +3,8 @@
 $page = "presentation.phtml";
 $headings = [["presentation" => "Présentation"],
               ["menu" => "La carte"],
-              // ["chats" => "Nos protégés"],
+              ["chats" => "Nos chats"],
               ["adresse" => "Nous contacter"],];
-
-//array_push($headings, ["presentation" => "Présentation"]);
 
 function print_nav($headings) {
   for ($i=0; $i < sizeof($headings); $i++) {
@@ -28,11 +26,11 @@ if ($_GET!=null) {
     case 'menu':
       include "carte.phtml";
     break;
-    // case 'chats':
-    //   include  "chats.phtml";
-    // break;
     case 'adresse':
       include  'contact.phtml';
+    break;
+    case 'chats':
+      include  'chats.phtml';
     break;
     default:
       include "presentation.phtml";
