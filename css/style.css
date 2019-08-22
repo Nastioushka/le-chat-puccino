@@ -272,6 +272,12 @@ footer {
 		max-height: 100%;
 	}
 
+	figcaption {
+		font-size: 1.5em;
+		font-weight: bold;
+		text-align: center;
+	}
+
 	article:nth-of-type(odd) img {
 		float: left;
 		margin-right: 20px;
