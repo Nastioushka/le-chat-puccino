@@ -1,6 +1,5 @@
 <?php
 
-$page = "presentation.phtml";
 $headings = [["presentation" => "Présentation"],
               ["menu" => "La carte"],
               ["chats" => "Nos chats"],
@@ -13,11 +12,6 @@ function print_nav($headings) {
     }
   }
 };
-
-function includ_content() {
-
-}
-
 
 include "header.phtml";
 
